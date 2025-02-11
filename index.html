@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="eCommerce Project">
+  <title>eCommerce Project</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- navbar starts here -->
+  <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+
+  <nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space-around">
+
+      <li class="nav__list">
+        <a href="index.html" class="nav__link">Home</a>
+      </li>
+
+      <li class="nav__list">
+        <a href="register.html" class="nav__link">Register</a>
+      </li>
+
+      <li class="nav__list">
+        <a href="login.html" class="nav__link">Login</a>
+      </li>
+
+      <li class="nav__list">
+        <a href="index.html" class="nav__link">Logout</a>
+      </li>
+
+      <li class="nav__list">
+        <a href="contact.html" class="nav__link">Contact</a>
+      </li>
+
+      <li class="nav__list">
+        <a href="profile.html" class="nav__link"><img class="profile-icon" src="./Images/logo.png"
+            alt="profile icon"></a>
+      </li>
+
+    </ul>
+
+
+    <ul class="nav-lower flex-space-around">
+
+      <li class="nav__list">
+        <a class="nav__link nav__brand" href="index.html">Maruf Express</a>
+      </li>
+
+      <li class="nav__list">
+        <a class="nav__link" href="cart.html">
+          <span><i class="fa-solid fa-cart-shopping"></i></span>
+          Cart 2 products - $930
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+  <!-- navbar ends here -->
+
+
+  <!-- Header starts here -->
+  <header class="header">
+
+    <div class="banner flex-space-around">
+
+      <marquee class="banner__title" behavior="" direction="">50% sales going on</marquee>
+
+      <div class="features flex-space-around">
+
+        <article class="feature flex-center">
+          <i class="fa-solid fa-truck feature__icon"></i>
+          <h3>Shipping within 7 days</h3>
+        </article>
+
+        <article class="feature flex-center">
+          <i class="fa-brands fa-rocketchat feature__icon"></i>
+          <h3>Support 24/7</h3>
+        </article>
+
+        <article class="feature flex-center">
+          <i class="fa-regular fa-credit-card feature__icon"></i>
+          <h3>Safe Payment</h3>
+        </article>
+
+      </div>
+
+    </div>
+
+  </header>
+  <!-- Header ends here -->
+
+
+  <main class="flex-center">
+
+    <div class="sidebar">
+
+      <section class="categories-section">
+        <h3 class="section-title">Categories</h3>
+        <ul class="list">
+
+          <li class="list__item">
+            <label for="phone">
+              <input type="checkbox" name="phone" id="phone" value="phone">Smart Phone
+            </label>
+          </li>
+
+          <li class="list__item">
+            <label for="tablet">
+              <input type="checkbox" name="tablet" id="tablet" value="tablet">Tablet
+            </label>
+          </li>
+
+          <li class="list__item">
+            <label for="" laptop>
+              <input type="checkbox" name="laptop" id="laptop" value="laptop">Laptop
+            </label>
+          </li>
+
+
+          <li class="list__item">
+            <label for="telivision">
+              <input type="checkbox" name="telivision" id="telivision" value="telivision"> Telivision
+            </label>
+          </li>
+
+
+          <li class="list__item">
+            <label for="headphone">
+              <input type="checkbox" name="headphone" id="headphone" value="headphone">Headphone
+            </label>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="price-section">
+        <h3>Price Range</h3>
+        <ul class="list">
+
+          <li class="list__item">
+            <label for="price1">
+              <input type="radio" name="price" id="price1" value="[0,20]">$0-$20
+            </label>
+          </li>
+
+          <li class="list__item">
+            <label for="price2">
+              <input type="radio" name="price" id="price2" value="[21,50]">$21-$50
+            </label>
+          </li>
+
+          <li class="list__item">
+            <label for="price3">
+              <input type="radio" name="price" id="price3" value="[51,100]">$51-$100
+            </label>
+          </li>
+
+          <li class="list__item">
+            <label for="price4">
+              <input type="radio" name="price" id="price4" value="[101,500]">$101-500
+            </label>
+          </li>
+
+          <li class="list__item">
+            <label for="price5">
+              <input type="radio" name="price" id="price5" value="[501+]">
+            </label>$501+
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="shipping-section">
+        <h3 class="section-title">Shipping Options</h3>
+        <ul class="list">
+
+          <li class="list__item">
+            <label for="free">
+              <input type="radio" name="shipping" id="free" value="free">Free Shipping
+            </label>
+          </li>
+
+          <li class="list__item">
+            <label for="paid">
+              <input type="radio" name="shipping" id="paid" value="paid">Paid Shipping
+            </label>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </div>
+
+    <div class="main-content">
+
+      <section class="actions flex-space-around">
+        <div class="actions__sort">
+          <label for="sort">Sort By:</label>
+          <select name="sort" id="sort">
+
+            <option value="sold">Most sold first</option>
+            <option value="rating">Most rated first</option>
+            <option value="price">Price low to high</option>
+            <option value="arrival">Newest first</option>
+            <option value="discount">Biggest discount first</option>
+
+          </select>
+        </div>
+
+        <div class="actions__search">
+          <input type="search" placeholder="Search Product">
+          <button class="btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Product section starts here -->
+      <section class="products">
+
+        <article class="product card">
+          <div class="badge">
+            <span>27 in stock</span>
+            <hr class="hr-design">
+            <span>88 sold</span>
+          </div>
+          <img class="product__img" src="./Images/product1.jpg" alt="product1">
+          <div class="product__body">
+            <h3 class="product__name">Samsung Galaxy S24 Ultra</h3>
+            <p>
+              <span class="dot green"></span>
+              <span class="dot black"></span>
+              <span class="dot red"></span>
+            </p>
+            <p class="product__description">
+              The Samsung Galaxy S24  ltra features a 6.8" Dynamic AMOLED 2X display, Snapdragon 8 Gen 3 processor,
+              200MP quad-camera <a class="learn-more" href="./product.html">Learn More...</a>
+            </p>
+            <h4 class="product__price">$850</h4>
+            <p class="product__rating">Rating: 4.9/5</p>
+            <button class="btn product__btn">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product card">
+          <div class="badge">
+            <span>8 in stock</span>
+            <hr class="hr-design">
+            <span>48 sold</span>
+          </div>
+          <img class="product__img" src="./Images/product2.jpg" alt="product2">
+          <div class="product__body">
+            <h3 class="product__name">HP 250 G8 Intel Celeron N4020 15.6" FHD Laptop</h3>
+            <p>
+              <span class="dot green"></span>
+              <span class="dot black"></span>
+              <span class="dot red"></span>
+            </p>
+            <p class="product__description">
+              The HP 250 G8 features an Intel Celeron N4020 processor, 15.6” FHD display, 4GB RAM, and 256GB SSD,
+              offering reliable
+              performance <a class="learn-more" href="./product.html">Learn More...</a>
+            </p>
+            <h4 class="product__price">$450</h4>
+            <p class="product__rating">Rating: 4.7/5</p>
+            <button class="btn product__btn">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product card">
+          <div class="badge">
+            <span>15 in stock</span>
+            <hr class="hr-design">
+            <span>102 sold</span>
+          </div>
+          <img class="product__img" src="./Images/product3.jpg" alt="product3">
+          <div class="product__body">
+            <h3 class="product__name">Samsung 43DU8000 43" Crystal 4K UHD HDR Smart TV</h3>
+            <p>
+              <span class="dot green"></span>
+              <span class="dot black"></span>
+              <span class="dot red"></span>
+            </p>
+            <p class="product__description">
+              43” Crystal 4K UHD display with HDR, delivering vibrant colors and sharp details. Enjoy Tizen OS, Smart
+              Hub, voice
+              control <a class="learn-more" href="./product.html">Learn More...</a>
+            </p>
+            <h4 class="product__price">$380</h4>
+            <p class="product__rating">Rating: 4.6/5</p>
+            <button class="btn product__btn">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product card">
+          <div class="badge">
+            <span>36 in stock</span>
+            <hr class="hr-design">
+            <span>183 sold</span>
+          </div>
+          <img class="product__img" src="./Images/product4.jpg" alt="product4">
+          <div class="product__body">
+            <h3 class="product__name">Anker Wireless Headphone Life Q20</h3>
+            <p>
+              <span class="dot green"></span>
+              <span class="dot black"></span>
+              <span class="dot red"></span>
+            </p>
+            <p class="product__description">
+              Hybrid active noise cancellation, 40-hour playtime, and hi-res audio for immersive sound. Enjoy deep bass,
+              comfortable
+              earcups <a class="learn-more"
+                href="./product.html">Learn More...</a>
+            </p>
+            <h4 class="product__price">$40</h4>
+            <p class="product__rating">Rating: 4.8/5</p>
+            <button class="btn product__btn">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product card">
+          <div class="badge">
+            <span>36 in stock</span>
+            <hr class="hr-design">
+            <span>183 sold</span>
+          </div>
+          <img class="product__img" src="./Images/product5.jpg" alt="product5">
+          <div class="product__body">
+            <h3 class="product__name">Nothing Phone (1)</h3>
+            <p>
+              <span class="dot green"></span>
+              <span class="dot black"></span>
+              <span class="dot red"></span>
+            </p>
+            <p class="product__description">
+              A stylish mid-range smartphone featuring a transparent back, Glyph LED lighting, 6.55-inch OLED display,
+              Snapdragon
+              778G+ processor <a class="learn-more"
+                href="./product.html">Learn More...</a>
+            </p>
+            <h4 class="product__price">$400</h4>
+            <p class="product__rating">Rating: 4.9/5</p>
+            <button class="btn product__btn">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product card">
+          <div class="badge">
+            <span>5 in stock</span>
+            <hr class="hr-design">
+            <span>35 sold</span>
+          </div>
+          <img class="product__img" src="./Images/product6.jpg" alt="product6">
+          <div class="product__body">
+            <h3 class="product__name">HUAWEI Matepad 11.5 INCH WiFi</h3>
+            <p>
+              <span class="dot green"></span>
+              <span class="dot black"></span>
+              <span class="dot red"></span>
+            </p>
+            <p class="product__description">
+              HUAWEI MatePad 11.5-inch WiFi is a powerful tablet with a 120Hz display, Snapdragon processor, and
+              HarmonyOS <a class="learn-more" href="./product.html">Learn More...</a>
+            </p>
+            <h4 class="product__price">$380</h4>
+            <p class="product__rating">Rating: 4.5/5</p>
+            <button class="btn product__btn">Add to Cart</button>
+          </div>
+        </article>
+
+      </section>
+
+      <div class="pagination">
+        <button class="btn pagination__btn"><i class="fa-solid fa-less-than"></i></button>
+        <button class="btn pagination__btn">2</button>
+        <button class="btn pagination__btn">3</button>
+        <button class="btn pagination__btn">4</button>
+        <button class="btn pagination__btn">5</button>
+        <button class="btn pagination__btn">6</button>
+        <button class="btn pagination__btn">7</button>
+        <button class="btn pagination__btn">8</button>
+        <button class="btn pagination__btn">9</button>
+        <button class="btn pagination__btn">10</button>
+        <button class="btn pagination__btn">...</button>
+        <button class="btn pagination__btn">50</button>
+        <button class="btn pagination__btn"><i class="fa-solid fa-greater-than"></i></button>
+
+      </div>
+      <!-- Product section ends here -->
+
+    </div>
+  </main>
+
+  <!-- Footer starts here -->
+  <footer class="flex-space-around">
+
+    <div class="flex-space-around">
+
+      <label for="subscribe">Subscribe to Newsletter:</label>
+      <input type="email" id="subscribe" name="subscribe" class="footer__input" placeholder="Your email address">
+      <button class="btn btn-subscribe">Subscribe</button>
+
+    </div>
+
+    <div>
+      <p>&copy; Copyright 2023 Maruf Express. All rights reserved.</p>
+    </div>
+
+  </footer>
+  <!-- Footer ends here -->
+
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>
